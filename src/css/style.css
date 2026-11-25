@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#cont{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+    grid-template-columns: 200px, minmax(100px, 1fr), 200px;
+    
+}
+header{
+    grid-area: header;
+    border: 2px solid black;
+}
+nav{
+    grid-area: nav;
+    border: 2px solid black;
+}
+aside{
+    grid-area: aside;
+    border: 2px solid black;
+}
+main{
+    grid-area: main;
+    border: 2px solid black;
+}
+footer{
+    grid-area: footer;
+    border: 2px solid black;
+}
