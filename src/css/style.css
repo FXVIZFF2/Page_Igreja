@@ -10,27 +10,27 @@
     "nav nav nav"
     "aside main main"
     "aside main main"
+    "aside main main"
+    "aside main main"
     "footer footer footer";
     grid-template-columns: 200px, minmax(100px, 1fr), 200px;
     
 }
+header, nav, aside, main, footer{
+    border: 2px solid black;
+}
 header{
     grid-area: header;
-    border: 2px solid black;
 }
 nav{
     grid-area: nav;
-    border: 2px solid black;
 }
 aside{
     grid-area: aside;
-    border: 2px solid black;
 }
 main{
     grid-area: main;
-    border: 2px solid black;
 }
 footer{
     grid-area: footer;
-    border: 2px solid black;
 }
