@@ -12,6 +12,7 @@
     "aside main main"
     "aside main main"
     "aside main main"
+    "aside main main"
     "footer footer footer";
     grid-template-columns: 200px, minmax(100px, 1fr), 200px;
     
@@ -28,6 +29,8 @@ header{
 }
 nav{
     grid-area: nav;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 aside{
     grid-area: aside;
@@ -59,4 +62,13 @@ footer{
     display: flex;
     flex-direction: row;
     border: 2px solid black;
+}
+.links{
+    text-decoration:none;
+    font-size: 1.5rem;
+    color:black;
+}
+.links:hover{
+    color: grey;
+    transition: 0.5s;
 }
